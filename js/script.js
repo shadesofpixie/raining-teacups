@@ -1,9 +1,9 @@
 
 
 var c = document.getElementById('canvas')
+var s = sprinkler.create(c) 
 function rainingTea(message) {
     
-    var s = sprinkler.create(c)
     var images = [
         'teacup.png',
         'teacup.png'
