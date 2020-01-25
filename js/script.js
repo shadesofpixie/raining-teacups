@@ -9,9 +9,12 @@ function rainingTea(message) {
         'teacup.png'
       ]
       var stop = s.start(images, {
+        imagesInSecond: 10,
         ddyMin: 200,
-        ddyMax: 200
+        ddyMax: 200,
+
       })
+      
 }
 
 
