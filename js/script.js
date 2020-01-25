@@ -1,9 +1,9 @@
 
 
 var c = document.getElementById('canvas')
-var s = sprinkler.create(c)
-
 function rainingTea(message) {
+    
+    var s = sprinkler.create(c)
     var images = [
         'teacup.png',
         'teacup.png'
@@ -12,6 +12,9 @@ function rainingTea(message) {
         ddyMin: 200,
         ddyMax: 200
       })
+      setTimeout(function(){
+        stop();
+      }, 4000)
 }
 
 
