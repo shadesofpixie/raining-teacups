@@ -1,23 +1,28 @@
 
 
 var c = document.getElementById('canvas')
-var s = sprinkler.create(c)
-
+var s = sprinkler.create(c) 
 function rainingTea(message) {
+    
     var images = [
         'teacup.png',
-        'teacup.png'
+        'teacup.png',
+        'teacup.png',
       ]
       var stop = s.start(images, {
-        imagesInSecond: 10,
+        imagesInSecond: 8,
         ddyMin: 200,
         ddyMax: 200,
 
       })
-      
+
+      setTimeout(function(){
+        stop();
+      }, 5000)
+
 }
 
-
+rainingTea();
 
 
 ComfyJS.onCommand = ( user, command, message, flags, extra ) => {
@@ -34,4 +39,4 @@ ComfyJS.onChat = ( user, message, flags, self, extra ) => {
         rainingTea( message );
     }
 };
-ComfyJS.Init( "smilesandteaa" );
+ComfyJS.Init( "shadesofpixie" );
