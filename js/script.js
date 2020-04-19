@@ -22,7 +22,7 @@ function rainingTea(message) {
 
 }
 
-// rainingTea();
+rainingTea();
 
 
 ComfyJS.onCommand = ( user, command, message, flags, extra ) => {
@@ -42,11 +42,4 @@ ComfyJS.onChat = ( user, message, flags, self, extra ) => {
        
     }
 };
-function getUrlVars() {
-    var vars = {};
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-        vars[key] = value;
-    });
-    return vars;
-}
-  ComfyJS.Init( getUrlVars()["channel"] );
+ComfyJS.Init( channel );
