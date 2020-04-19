@@ -42,4 +42,11 @@ ComfyJS.onChat = ( user, message, flags, self, extra ) => {
        
     }
 };
-ComfyJS.Init( channel );
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+  ComfyJS.Init( getUrlVars()["channel"] );
