@@ -29,17 +29,17 @@ ComfyJS.onCommand = ( user, command, message, flags, extra ) => {
     if( command === "teaparty" &&
         ( !rewardId || flags.broadcaster || flags.mod ) ) {
         rainingTea( message );
-        window.reload();
+      
     }
     if( flags.customReward && extra.customRewardId === rewardId ) {
         rainingTea( message );
-        window.reload();
+       
     }
 };
 ComfyJS.onChat = ( user, message, flags, self, extra ) => {
     if( flags.customReward && extra.customRewardId === "f1d2db18-77eb-4f0c-a0d7-5790cc735f01" ) {
-        rainingTea( message );
-        window.reload();
+        rainingTea( message );                          
+       
     }
 };
 ComfyJS.Init( "shadesofpixie" );
