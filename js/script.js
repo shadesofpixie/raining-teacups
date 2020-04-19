@@ -31,7 +31,7 @@ ComfyJS.onCommand = ( user, command, message, flags, extra ) => {
         rainingTea( message );
       
     }
-    if( flags.customReward && extra.customRewardId === rewardId ) {
+    if( flags.customReward && extra.customRewardId === "f1d2db18-77eb-4f0c-a0d7-5790cc735f01" ) {
         rainingTea( message );
        
     }
