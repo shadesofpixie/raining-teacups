@@ -22,7 +22,7 @@ function rainingTea(message) {
 
 }
 
-rainingTea();
+// rainingTea();
 
 
 ComfyJS.onCommand = ( user, command, message, flags, extra ) => {
@@ -42,4 +42,4 @@ ComfyJS.onChat = ( user, message, flags, self, extra ) => {
        
     }
 };
-ComfyJS.Init( "shadesofpixie" );
+ComfyJS.Init( channel );
